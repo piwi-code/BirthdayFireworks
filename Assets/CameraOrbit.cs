@@ -39,7 +39,7 @@ public class CameraOrbit : MonoBehaviour
                 _localRotation.x += Input.GetAxis("Mouse X") * MouseSensitivity;
                 _localRotation.y -= Input.GetAxis("Mouse Y") * MouseSensitivity;
 
-                _localRotation.y = Mathf.Clamp(_localRotation.y, 0f, 90f);
+                _localRotation.y = Mathf.Clamp(_localRotation.y, -75f, 90f);    // todo orginal code clamped at 0 to avoid clipping... we probably need to do this when moving the camera somehow...
             }
 
             //Zoom based on scroll wheel...
