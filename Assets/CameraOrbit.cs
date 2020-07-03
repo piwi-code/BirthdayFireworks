@@ -8,7 +8,7 @@ public class CameraOrbit : MonoBehaviour
     private Transform _pivot;
 
     private Vector3 _localRotation;
-    private float _cameraDistance = 10f;    // the same distance as the camera is offest from the pivot
+    private float _cameraDistance = 15f;    // the same distance as the camera is offest from the pivot
 
     public float MouseSensitivity = 4f;
     public float ScrollSensitivity = 2f;
@@ -23,7 +23,7 @@ public class CameraOrbit : MonoBehaviour
         _pivot = this.transform.parent;
     }
 
-    void LateUpdate()
+    void Update()
     {
         // nb: need camera to render after scene is calculated (avoid cropping/clipping)
 
@@ -50,7 +50,7 @@ public class CameraOrbit : MonoBehaviour
                 scrollAmout *= (this._cameraDistance * 0.3f);   // allows further away from object to increase zoom
                 _cameraDistance += scrollAmout * -1f;
 
-                _cameraDistance = Mathf.Clamp(_cameraDistance, 1.5f, 100f);
+                _cameraDistance = Mathf.Clamp(_cameraDistance, 1.5f, 50f);
             }
         }
 
