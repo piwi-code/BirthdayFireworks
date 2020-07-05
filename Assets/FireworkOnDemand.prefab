@@ -154,3 +154,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79288800fe1e18a449ce5daf50a23011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Launch:
+  - {fileID: 8300000, guid: 0942a80988c3cf04eb2d8d0d5327e2f1, type: 3}
+  - {fileID: 8300000, guid: 7ffc88b2bd1270542958c9a56c703092, type: 3}
+  - {fileID: 8300000, guid: abcba291d2d8f9f498e05f4db5a331d1, type: 3}
+  Explosion:
+  - {fileID: 8300000, guid: 4ace691a43d14764e9f01a6911be327d, type: 3}
+  - {fileID: 8300000, guid: 6f519e5379041fd449839516c39d2301, type: 3}
+  - {fileID: 8300000, guid: ee2181a2d49dfcf44b0b15c731154b58, type: 3}
